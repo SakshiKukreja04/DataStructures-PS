@@ -8,6 +8,9 @@ public class LinearSearch{
     }
     static boolean linearsearch(int[] arr, int target){
         for(int i=0;i<arr.length;i++){
+            if(arr.length==0){
+                return -1;
+            }
             if(arr[i]==target){
                 return true;
             }
